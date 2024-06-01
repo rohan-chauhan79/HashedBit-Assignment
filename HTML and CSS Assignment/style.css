@@ -1,0 +1,120 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body {
+ font-family: Arial, sans-serif;
+}
+
+header {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ background-color: #299f9b;
+ color: #fff;
+ padding: 10px 20px;
+}
+
+
+
+header .logo img {
+ max-height: 50px;
+}
+
+header .social-links a {
+ color: #141515;
+ margin-left: 10px;
+ text-decoration: none;
+ font-weight: bold;
+}
+
+nav {
+ background-color: #444;
+}
+
+
+nav ul {
+ list-style: none;
+ display: flex;
+ justify-content: center;
+}
+
+nav ul li {
+ margin: 0 15px;
+}
+
+nav ul li a {
+ color: #fff;
+ text-decoration: none;
+ padding: 10px 15px;
+ display: block;
+}
+
+nav ul li a:hover {
+ background-color: #555;
+}
+
+.home:hover{
+ font-weight: bold;
+}
+.about:hover{
+ font-weight: bold;
+}
+
+.services:hover{
+ font-weight: bold;
+}
+.contact:hover{
+ font-weight: bold;
+}
+
+.container {
+ display: flex;
+ margin: 20px;
+}
+
+.sidebar {
+ width: 25%;
+ height: 35rem;
+ padding: 30px;
+ background-color: #f4f4f4;
+ border: 1px solid #ccc;
+
+}
+
+main {
+ width: 75%;
+ padding: 20px;
+}
+
+main .box {
+ margin-bottom: 30px;
+ padding: 40px;
+ background-color: #e4e4e4;
+ border: 1px solid #ccc;
+}
+
+main .box img {
+ max-width: 100%;
+ height: auto;
+}
+
+footer {
+ background-color: #834f4f;
+ color: #fff;
+ text-align: center;
+ padding: 10px 20px;
+ position: fixed;
+ bottom: 0;
+ width: 100%;
+}
+
+.github-links{
+ text-decoration: none;
+ font-weight: bold;
+ color:rgb(36, 218, 127);
+ position: absolute;
+ right: 9px;
+}
