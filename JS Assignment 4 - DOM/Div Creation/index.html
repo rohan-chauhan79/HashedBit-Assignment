@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Div Creation</title>
+</head>
+<style>
+ #container {
+   border: 2px solid #ccc;
+   padding: 10px;
+ }
+</style>
+
+<body>
+ <div id="container"> </div>
+
+
+ <script>
+  function createDiv(width, height, text) {
+    var newDiv = document.createElement('div');
+    newDiv.style.width = width + 'px';
+    newDiv.style.height = height + 'px';
+    newDiv.textContent = text;
+
+    // Append the new div to the #container div
+    document.getElementById('container').appendChild(newDiv);
+  }
+  createDiv(200, 100, 'Hello, World!');
+</script>
+
+</body>
+</html>
