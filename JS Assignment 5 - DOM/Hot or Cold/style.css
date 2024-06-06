@@ -1,0 +1,17 @@
+#userInput{
+width: 16rem;
+}
+
+#main{
+ font-size: 20px;
+ font-weight: bold;
+}
+
+#userInput{
+ width: 20rem;
+ padding: 5px;
+}
+
+#btn{
+ padding: 5px;
+}

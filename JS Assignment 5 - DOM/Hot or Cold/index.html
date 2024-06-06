@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="style.css">
+ <title>Hot or Cold</title>
+</head>
+<body>
+
+ <p id="main">I am learning to generate random number. I will be able to handle randomness in any of my applications that needs it. 
+  <br>Press the button to get a random number.
+ </p>
+ <input type="number" placeholder="Enter Number between -20 to 20" id="userInput">
+ <button id="btn" onclick="displayRandomNumber()">Click Me</button>
+ <br>
+ <p id="num"></p>
+</body>
+<script>
+ function displayRandomNumber(){
+ let randomNumber = Math.floor(Math.random() * (41)) - 20;
+ console.log(randomNumber)
+ let userGuesNumber=document.getElementById('userInput').value;
+ console.log(userGuesNumber)
+ const difference = Math.abs(randomNumber - userGuesNumber);
+   if (difference === 0) {
+     displayResult("Congratulations! You guessed the correct number!");
+   } else if (difference <= 10) {
+     displayResult("Hot");
+   } else {
+     displayResult("Cold");
+   }
+ 
+}
+function displayResult(message) {
+   document.getElementById("num").innerText = message;
+ }
+</script>
+
+ 
+</body>
+</html>
