@@ -20,7 +20,7 @@ const Calculator = () => {
 
   const handleCalculate = () => {
     try {
-      setResult(eval(input)); // Note: Using eval is generally not safe, consider using a safer alternative for production
+      setResult(eval(input)); 
     } catch (error) {
       setResult('Error');
     }
