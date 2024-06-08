@@ -3,13 +3,27 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 50vh;
+  width: 50vh;
   background-color: #f0f0f0;
   margin: 0;
 }
 
+.bgt{
+  background-color: #007bff;
+  height: 50vh;
+  width: 50vh;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin-left: 60rem;
+  margin-top: 20rem;
+  border: 2px solid rgb(35, 247, 130);
+  
+}
 
 h1 {
+  color: #d89999;
   margin: 0 0 20px;
 }
 
