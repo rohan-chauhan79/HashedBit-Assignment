@@ -25,7 +25,7 @@ const TodoList = () => {
     };
 
     return (
-        <div>
+        <div className='bgt'>
             <h1>Todo List</h1>
             <input
                 type="text"
